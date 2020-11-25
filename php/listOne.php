@@ -3,10 +3,10 @@
 
 include('conexion.php');
 $search = $_POST["search"];
-//print_r($search);
+$search = explode('/',$search);
 $jsonM = array();
-
-$sql = "SELECT * FROM uf WHERE month(fecha)=".$search;
+$sql = "SELECT * FROM uf WHERE YEAR(fecha)='$search[2]' AND MONTH(fecha)='$search[0]' AND DAY(fecha)='$search[1]'";
+//print_r($sql);
 foreach ($mbd->query($sql) as $row) {
     $jsonM[] = array(
         'id' => $row['id'],
