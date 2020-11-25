@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/daypicker/bootstrap-datepicker.css">
+    <title>UF</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <p id="uf-actual"></p>
+            <button class="btn btn-primary" type="button" id="consulta">Consulta Fecha</button>
+            <button class="btn btn-warning" type="button" id="mes">UF AÑO</button>
+        </div>
+        </br>
+        <div id="tabla">
+        </div>
+        <div id="tabla2"></div>
+
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-date">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Selecciona una fecha</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group date js-date">
+                            <input type="text" class="form-control" id="FechaSeleccionada"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="FechaBoton">Seleccionar</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+    </center>
+</body>
+<!-- jquery -->
+
+<script src="/libs/jquery-3.5.1.min.js"></script>
+<script src="/libs/daypicker/bootstrap-datepicker.min.js"></script>
+<script src="/js/app.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</html>
